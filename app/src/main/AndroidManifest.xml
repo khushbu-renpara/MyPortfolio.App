@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myportfolio">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="MyPortfolio"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyPortfolio">
+    <activity
+            android:name=".EditResumeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddEditProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProjectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddEditExperienceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditExperienceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditEducationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditSkillsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CertificatesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditSectionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditSectionsActivity"
+            android:exported="false" /> <!-- MAIN / HOME SCREEN -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- EDIT PROFILE (CONTROL CENTER) -->
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".EditInfoActivity" />
+        <activity android:name=".EditPhotoActivity" />
+        <activity android:name=".EditCertificatesActivity" />
+        <activity android:name=".AddEditCertificateActivity" /> <!-- VIEW SECTIONS -->
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".SkillsActivity" />
+        <activity android:name=".ProjectsActivity" />
+        <activity android:name=".EducationActivity" />
+        <activity android:name=".ExperienceActivity" />
+        <activity android:name=".ContactActivity" />
+    </application>
+
+</manifest>

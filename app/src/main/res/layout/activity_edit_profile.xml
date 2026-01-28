@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:fitsSystemWindows="true">
+
+
+    <!-- ================= APP BAR ================= -->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:title="Edit Profile"
+            android:titleTextColor="@android:color/white"
+            app:navigationIcon="@drawable/ic_back"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!-- ================= CONTENT ================= -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="100dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!-- Section Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Your Profile"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginBottom="20dp"/>
+
+
+            <!-- Buttons -->
+
+            <Button
+                android:id="@+id/btnEditInfo"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile Info"/>
+
+
+            <Button
+                android:id="@+id/btnEditPhoto"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Profile Photo"
+                android:layout_marginTop="12dp"/>
+
+
+            <Button
+                android:id="@+id/btnEditSkills"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Skills"
+                android:layout_marginTop="12dp"/>
+
+
+            <Button
+                android:id="@+id/btnEditCertificates"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Certificates"
+                android:layout_marginTop="12dp"/>
+
+
+            <Button
+                android:id="@+id/btnEditEducation"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Education"
+                android:layout_marginTop="12dp"/>
+
+
+            <Button
+                android:id="@+id/btnEditContact"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Contact"
+                android:layout_marginTop="12dp"/>
+
+
+            <Button
+                android:id="@+id/btnEditExperience"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Experience"
+                android:layout_marginTop="12dp"/>
+
+
+            <Button
+                android:id="@+id/btnEditProjects"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Projects"
+                android:layout_marginTop="12dp"/>
+
+
+            <Button
+                android:id="@+id/btnEditResume"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Resume"
+                android:layout_marginTop="12dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- ================= BOTTOM NAV ================= -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        app:menu="@menu/bottom_nav_menu"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

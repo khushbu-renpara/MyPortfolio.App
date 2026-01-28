@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.MyPortfolio" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/background</item>
+
+        <!-- Status bar -->
+
+        <!-- Default text appearance -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Material buttons -->
+        <item name="materialButtonStyle">@style/Widget.MyPortfolio.Button</item>
+
+        <!-- Remove action bar completely -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="Widget.MyPortfolio.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>
